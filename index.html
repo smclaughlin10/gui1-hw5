@@ -1,0 +1,45 @@
+<!-- File: index.html
+GUI Assignment: HW5 - Implementing a Bit of Scrabble with Drag-and-Drop
+Sean Mclaughlin, UMass Lowell Computer Science,
+Sean_Mclaughlin1@student.uml.edu
+Copyright (c) 2023 by Sean. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by SM on December 15, 2023 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/tiles.css">
+	<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+	<script src="js/arrays.js"></script>
+	<script src="js/index.js"></script>
+	<title>GUI HW5</title>
+</head>
+<body>
+	<header>
+		<h1>Scrabble Drag and Drop</h1>
+	</header>
+	<main>
+		<div id="usableSection">
+			<div id="tableBoard" class="usableInner ui-droppable">
+			</div>
+			<div id="userBoard" class="usableInner ui-droppable">
+			</div>
+		</div>
+		<div id="score">
+			<p class="scoreP">Tiles Left: <span id="tilesAmt">100</span></p>
+			<p class="scoreP">Current Score: <span id="liveScore">0</span></p>
+			<p class="scoreP">Total Score: <span id="totalScore">0</span></p>
+		</div>
+		<div id="controls">
+			<button id="resetBtn">Reset</button>
+			<button id="submitBtn">Submit</button>
+		</div>
+	</main>
+</body>
+</html>
